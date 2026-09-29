@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fdfdfd;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #1a1a1a;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #fff;
+    padding: 120px 0 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 30px;
+    color: #1e293b;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0d6efd;
+    margin-top: 8px;
+}
+
+.center-title::after {
+    margin: 8px auto 0 auto;
+}
+
+.project-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+    border-color: #cbd5e1;
+}
+
+.tech-tag {
+    font-size: 0.8rem;
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 2px;
+}
+
+.skill-badge {
+    background-color: #fff;
+    border: 1px solid #cbd5e1;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+/* style.css */
+
+.hero-profile-img {
+    /* Step 1: Force the image container to be a perfect square */
+    width: 320px; 
+    height: 320px;
+
+    /* Step 2: Make the *photo inside* fill the square without stretching */
+    object-fit: cover; 
+    
+    /* Step 3: Make the entire square container circular */
+    border-radius: 50% !important;
+
+    /* Step 4: Ensure the photo itself is also cropped to the circle */
+    overflow: hidden;
+
+    /* Preserve the light border style */
+    display: block;
+    margin: 0 auto; /* Centers it if needed */
+}
