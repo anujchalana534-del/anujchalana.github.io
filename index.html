@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-img-circle {
+            width: 340px;
+            height: 340px;
+            object-fit: cover;
+            object-position: 50% 20%;
+            border-radius: 50% !important;
+        }
+
+        /* High-visibility footer styling */
+        .footer-social-icon {
+            color: #ffffff !important;
+            opacity: 0.9;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .footer-social-icon:hover {
+            opacity: 1;
+            color: #0d6efd !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+            
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#upcoming-projects">Upcoming</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-start">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Parth Kohli</h1>
+                    <p class="lead mb-4">
+                        Full Stack Developer | FastAPI | Python Core | MySQL | Angular
+                    </p>
+                    <div>
+                        <a href="#projects" class="btn btn-primary px-4 py-2 me-2">Explore Projects</a>
+                        <a href="mailto:parthkohli2004@gmail.com" class="btn btn-outline-light px-4 py-2">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-center mt-4 mt-md-0 d-flex justify-content-center">
+                    <img src="pp.jpeg" alt="Developer Profile" class="profile-img-circle border border-4 border-light shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I am a computer science engineering student doing graduation from Guru Nanak Dev University, Amritsar. I have a strong passion for backend development and software engineering, with a particular interest in building efficient and scalable systems. My journey in programming started with C/C++(basic), and over time, I have expanded my skill set to include Python, HTML, CSS, Php, Java(basic), FastAPI, MySQL, and Angular.
+                    </p>
+                    <p>
+                        With a deep interest in software development and web development. Currently I'm building applications using FastAPI, Angular and MySQL to handle application data smoothly.
+                    </p>
+                    <p>
+                        Also have intrest in exploring new technologies and frameworks, and I am always eager to learn and adapt to the ever-evolving landscape of software development. My goal is to contribute to meaningful projects that make a positive impact on users and businesses alike.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 bg-light rounded border border-light shadow-sm">
+                        <h4 class="fw-bold mb-3 text-dark">Focus Areas</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Backend Architecture (FastAPI)</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Relational Database Design (MySQL)</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Frontend Development (Angular)</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> UI/UX Design (HTML/CSS)</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Object-Oriented Programming</li>
+                            <li class="mb-2"><i class="fa-solid fa-circle-check text-primary me-2"></i> Operating Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+            <h2 class="section-title center-title text-center">Technical Skills</h2>
+            <div class="row g-3 mt-2">
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-python text-primary"></i> Python Core</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-solid fa-database text-dark"></i> MySQL / SQL</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-angular text-danger"></i> Angular</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-solid fa-bolt text-warning"></i> FastAPI</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-php text-primary"></i> Php</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-c text-primary"></i> C/C++</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-java text-primary"></i> Java</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-html5 text-danger"></i> HTML5</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-css3-alt text-primary"></i> CSS3</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-badge"><i class="fa-brands fa-bootstrap text-purple" style="color: #563d7c;"></i> Bootstrap 5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 border-bottom">
+        <div class="container">
+            <h2 class="section-title center-title text-center">Projects</h2>
+            <div class="row g-4 mt-2">
+                
+                <!-- Institute Management System -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Institute Management System</h5>
+                                <p class="text-muted small mb-2"><em>Full-Stack Web Application</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Architected scalable modules to handle student enrollments, course scheduling, and faculty management.</li>
+                                    <li>Implemented secure authentication and authorization protocols for admin, students using FastAPI backend services.</li>
+                                    <li>Structured relational schemas in MySQL to maintain data integrity across courses, faculty records, and student grades.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invoice Management System (Angular) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Invoice Management System</h5>
+                                <p class="text-muted small mb-2"><em>Full-Stack Web Application</em></p>
+                                <div class="badge bg-warning text-dark mb-2">Converted from PHP project</div>
+                                <ul class="text-muted small ps-3">
+                                    <li>Automated Billing & Calculation: Developed a dynamic billing engine to automate manual calculations and billing entries.</li>
+                                    <li>Synchronized Inventory Management: Implemented custom backend logic using FastAPI and MySQL to maintain product stock levels, automatically restoring inventory upon invoice deletion or modification.</li>
+                                    <li>Secure REST APIs & Performance Optimization: Built RESTful APIs using FastAPI for asynchronous data handling and secure database operations with MySQL, ensuring high performance and fast, seamless response times.</li>
+                                    <li>Modern Responsive UI/UX: Designed an intuitive dashboard featuring modern UI design principles with dark-themed layouts.</li>
+                                    <li>Customer Relationship Integration: Built a customer management module featuring one-click WhatsApp integration for instant invoice sharing and automated balance due tracking.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invoice Management System (PHP) -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Invoice Management System</h5>
+                                <p class="text-muted small mb-2"><em>Full-Stack PHP & MySQL Project</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Automated Billing & Calculation: Developed a dynamic billing engine using PHP to automate manual entry.</li>
+                                    <li>Synchronized Inventory Management: Implemented custom backend logic to maintain product stock levels and automatically restored upon invoice deletion or modification.</li>
+                                    <li>Secure CRUD & Performance Optimization: PHP (PDO) for secure database interactions and integrated AJAX for asynchronous data handling, enabling a fast, seamless user experience without page reloads.</li>
+                                    <li>Modern Responsive UI/UX: Designed a high-fidelity "Glassmorphism" dashboard using CSS and Bootstrap, featuring a dark-themed UI layout.</li>
+                                    <li>Customer Relationship Integration: Built a customer management module featuring one-click WhatsApp integration for instant invoice sharing and automated balance due tracking.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL (PDO)</span>
+                                    <span class="tech-tag">JavaScript (AJAX)</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zora AI Voice Assistant -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Zora AI Voice Assistant</h5>
+                                <p class="text-muted small mb-2"><em>Python AI Automation Project</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Developed a voice-controlled AI assistant using Python that performs system automation, web search, and conversational AI tasks. Integrated speech recognition (SpeechRecognition, Whisper) and text-to-speech (pyttsx3) to enable real-time voice interaction.</li>
+                                    <li>Implemented LLM-powered responses using Mistral-7B via OpenRouter API, allowing the assistant to answer general and technical queries.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">SpeechRecognition</span>
+                                    <span class="tech-tag">Whisper</span>
+                                    <span class="tech-tag">pyttsx3</span>
+                                    <span class="tech-tag">OpenRouter API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grocery Store Management System -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Grocery Store Management System</h5>
+                                <p class="text-muted small mb-2"><em>C++ Console-Based Application</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Developed a console-based grocery store management system using C++ with Object-Oriented Programming and file handling for persistent data storage.</li>
+                                    <li>Built user authentication (signup/login) with admin and customer roles, enabling secure access to inventory, billing, and employee management modules.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">C++</span>
+                                    <span class="tech-tag">OOP</span>
+                                    <span class="tech-tag">File Handling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING PROJECTS SECTION -->
+    <section id="upcoming-projects" class="py-5 bg-light border-bottom">
+        <div class="container">
+            <h2 class="section-title center-title text-center">Upcoming Projects</h2>
+            <p class="text-center text-muted mb-4">A sneak peek into applications and system upgrades currently in planning and active development.</p>
+            <div class="row g-4 mt-1">
+
+                <!-- Shri Sham Sundar Vastra Bhandar -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="fw-bold text-dark mb-0">Shri Sham Sundar Vastra Bhandar</h5>
+                                    <span class="badge bg-primary">In Development</span>
+                                </div>
+                                <p class="text-muted small mb-2"><em>E-Commerce Retail Platform</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Designing a full-featured e-commerce storefront to digitize inventory cataloging, sales tracking, and customer orders for a retail textile business.</li>
+                                    <li>Integrating automated inventory management with real-time stock deductions, payment gateway integration, and order dispatch notifications.</li>
+                                    <li>Building a high-performance customer dashboard featuring product filtering by fabric type, search auto-complete, and order tracking.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Payment Gateway API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zora 2.0 (Desktop Version) -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="fw-bold text-dark mb-0">Zora 2.0 (Desktop Edition)</h5>
+                                    <span class="badge bg-primary">In Architecture Phase</span>
+                                </div>
+                                <p class="text-muted small mb-2"><em>Desktop AI Companion & System Automator</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Evolving Zora into a native desktop software using CustomTkinter with a modernized GUI overlay and floating system widget.</li>
+                                    <li>Implementing deep OS integration for local file searching, direct application launching, and offline speech-to-text processing using local AI models.</li>
+                                    <li>Adding custom hotkey triggers, system resource monitoring, and asynchronous multi-threading for responsive real-time voice execution.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Tkinter / CustomTkinter</span>
+                                    <span class="tech-tag">Local LLM</span>
+                                    <span class="tech-tag">PyAudio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zora 3.0 (Web Version) -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="fw-bold text-dark mb-0">Zora 3.0 (Web Edition)</h5>
+                                    <span class="badge bg-info text-dark">Planning</span>
+                                </div>
+                                <p class="text-muted small mb-2"><em>Cloud-Based Web AI Platform</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Transitioning the engine to a cloud architecture featuring multi-user authentication, persistent conversation history, and cloud database storage.</li>
+                                    <li>Utilizing WebSockets and Web Audio API for continuous web browser voice interactions and low-latency response streaming.</li>
+                                    <li>Building a customizable dashboard allowing users to manage third-party API integrations, persona prompts, and custom tools.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Angular</span>
+                                    <span class="tech-tag">WebSockets</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zora 4.0 (IoT Version) -->
+                <div class="col-md-6 col-lg-6">
+                    <div class="card project-card h-100 p-3">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="fw-bold text-dark mb-0">Zora 4.0 (IoT Edition)</h5>
+                                    <span class="badge bg-secondary">Concept & R&D</span>
+                                </div>
+                                <p class="text-muted small mb-2"><em>Embedded Smart Home AI Hub</em></p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Deploying Zora onto single-board computers (Raspberry Pi/ESP32) for hardware-bound smart home voice control.</li>
+                                    <li>Interfacing with microcontrollers to control physical sensors, lighting systems, and relays via voice commands.</li>
+                                    <li>Engineering lightweight, low-latency edge AI models to execute offline voice triggers and hardware pin control without internet dependence.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-3">
+                                <div>
+                                    <span class="tech-tag">Python (MicroPython)</span>
+                                    <span class="tech-tag">Raspberry Pi</span>
+                                    <span class="tech-tag">MQTT</span>
+                                    <span class="tech-tag">IoT Hardware</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-2 text-light fw-medium">&copy; 2026 Parth Kohli. All Rights Reserved.</p>
+            <div class="d-flex justify-content-center gap-4 fs-4 mt-2">
+                <a href="https://github.com/Parth79-pixel" class="footer-social-icon" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/parth-kohli-bb1962301/" class="footer-social-icon" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:parthkohli2004@gmail.com" class="footer-social-icon" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
