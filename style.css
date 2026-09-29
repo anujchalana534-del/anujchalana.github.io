@@ -1,98 +1,137 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    background-color: #fdfdfd;
-    scroll-behavior: smooth;
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.navbar {
-    background-color: #1a1a1a;
+html{
+    scroll-behavior:smooth;
 }
 
-.hero-section {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    color: #fff;
-    padding: 120px 0 80px 0;
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
 }
 
-.section-title {
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 30px;
-    color: #1e293b;
+header{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
 }
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: #0d6efd;
-    margin-top: 8px;
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
 }
 
-.center-title::after {
-    margin: 8px auto 0 auto;
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
 }
 
-.project-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background: #fff;
+nav a{
+    color:white;
+    text-decoration:none;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.06);
-    border-color: #cbd5e1;
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-.tech-tag {
-    font-size: 0.8rem;
-    background-color: #f1f5f9;
-    color: #475569;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-weight: 500;
-    display: inline-block;
-    margin: 2px;
+.hero h1{
+    font-size:3rem;
 }
 
-.skill-badge {
-    background-color: #fff;
-    border: 1px solid #cbd5e1;
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.hero p{
+    margin-top:10px;
+    font-size:1.2rem;
 }
 
-footer {
-    background-color: #1a1a1a;
-    color: #94a3b8;
-    font-size: 0.9rem;
+.btn{
+    margin-top:20px;
+    display:inline-block;
+    background:#ffffff;
+    color:#2563eb;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
 }
-/* style.css */
 
-.hero-profile-img {
-    /* Step 1: Force the image container to be a perfect square */
-    width: 320px; 
-    height: 320px;
+section{
+    padding:80px 10%;
+}
 
-    /* Step 2: Make the *photo inside* fill the square without stretching */
-    object-fit: cover; 
-    
-    /* Step 3: Make the entire square container circular */
-    border-radius: 50% !important;
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e293b;
+}
 
-    /* Step 4: Ensure the photo itself is also cropped to the circle */
-    overflow: hidden;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
 
-    /* Preserve the light border style */
-    display: block;
-    margin: 0 auto; /* Centers it if needed */
+.card{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.education-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contact{
+    text-align:center;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
 }
